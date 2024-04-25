@@ -73,3 +73,48 @@ body {
   gap: 30px;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1300px) {
+  .image {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .image {
+    width: 500px;
+  }
+
+  .images {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .image {
+    width: 400px;
+  }
+
+  .split-section {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100vw;
+    text-align: left;
+  }
+
+  .main-header {
+    font-size: 40px;
+  }
+
+  .content {
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .image {
+    width: 300px;
+  }
+}
