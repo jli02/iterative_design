@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iterative Design</title>
+    <!-- import CSS styles -->
+
+    <link rel="stylesheet" href="https://use.typekit.net/ric3xzm.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- MAYBE CHANGE HEADERS INSTEAD OF BEING BOLD, THEY CAN BE DIFF SIZE-->
+  <body>
+    <main>
+      <section class="title colored-background-green">
+        <h1 class="main-header">Iterative Design: CUR8</h1>
+        <p class="header">
+          designing a purchasing flow for a carbon removal brokerage
+        </p>
+        <p class="body-text">
+          Team: Angie Osei-Ampadu, Sandy Martinez, Ashley Cai, Joyce Li
+        </p>
+      </section>
+
+      <!-- intro -->
+      <section class="split-section colored-background-white">
+        <div class="sidebar">
+          <h1 class="header">Introduction</h1>
+        </div>
+        <div class="content">
+          <p class="body-text">
+            CUR8 is a carbon removal brokerage on a mission to remove 1 billion
+            tonnes of carbon a year. They "curate" custom carbon removal
+            portfolios according to customers' needs and goals. The startup has
+            started designing a portfolio simulation tool, where customers can
+            input requirements and generate a portfolio of removal projects.
+            They have asked us to continue on their design to create a
+            purchasing flow so that users can buy the portfolios that they have
+            generated.
+          </p>
+          <p class="body-text">
+            <b>Problem Statement: </b>
+            "CUR8's current manual carbon removal portfolio creation process
+            limits user self-service and requires company assistance,
+            constraining the user experience and slowing down customer
+            acquisition."
+          </p>
+          <p class="body-text">
+            We wanted to create an <b>intuitive, simple purchasing flow</b> with
+            enough friction so that users can ensure that they are buying a
+            portfolio that is best suited for their needs (as buying carbon
+            removal projects can get very expensive!). We considered ways for
+            customers to get feedback on their generated portfolios from
+            stakeholders and how to make the process accessible to customers who
+            might not have any prior experience with purchasing carbon removal
+            projects.
+          </p>
+        </div>
+      </section>
+
+      <!-- sketches -->
+      <section class="full-section">
+        <h1 class="header">Sketching</h1>
+
+        <p class="body-text">
+          We each independently designed two solutions for the brief to get the
+          widest possible spread of ideas for our mid-fidelity wireframe,
+          resulting in 8 separate flows. While we did these independently, we
+          realized that many aspects of our flows overlapped, which helped us
+          decide what would be most intuitive for our first iteration of
+          wireframes.
+        </p>
+        <br />
+        <div class="images">
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch1.1.png"
+          />
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch1.2.png"
+          />
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch2.1.png"
+          />
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch2.2.png"
+          />
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch3.1.png"
+          />
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch3.2.png"
+          />
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch4.1.1.png"
+          />
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch4.1.2.png"
+          />
+          <img
+            class="image"
+            alt="sketch of end-to-end flow"
+            src="assets/sketch4.2.png"
+          />
+        </div>
+      </section>
+
+      <!-- first iteration wireframing -->
+      <section class="full-section">
+        <h1 class="header">First Iteration Wireframing</h1>
+
+        <p class="body-text">
+          In our sketches, we all had about the same pages: portfolio summary,
+          cart and customer information, and a confirmation page. While we each
+          broke different pages into multiple ones, we decided to begin with
+          these three because they were the most essential based on our sketches
+          and email with CUR8. We also added a collaborator page so that
+          stakeholders can easily be added to the process, since the customers
+          are usually teams working to determine their desired carbon tonnes
+          removal and price.
+        </p>
+        <p class="body-text">
+          Check out our Figma
+          <a
+            href="https://www.figma.com/file/p1Udmg2kCnHFqdq8gd3kK6/CUR8?type=design&node-id=0%3A1&mode=design&t=aP2dpECOhFH5DFvu-1"
+            target="_blank"
+            >here</a
+          >!
+        </p>
+        <br />
+        <div class="images">
+          <img
+            class="image"
+            alt="first page of low fidelity wireframe"
+            src="assets/lowfi1.png"
+          />
+          <img
+            class="image"
+            alt="second page of low fidelity wireframe"
+            src="assets/lowfi2.png"
+          />
+          <img
+            class="image"
+            alt="third page of low fidelity wireframe"
+            src="assets/lowfi3.png"
+          />
+          <img
+            class="image"
+            alt="fourth page of low fidelity wireframe"
+            src="assets/lowfi4.png"
+          />
+        </div>
+        <br />
+
+        <p class="body-text">
+          Our email to Vitor (our primary point of contact in CUR8) and feedback
+          from TAs was helpful in the group's understanding of what we were
+          supposed to do: create a payment flow. In turn, our group tried to
+          make the payment flow as natural and simple as possible by picking up
+          where the CUR8 high fidelity mockup left off on the project summary,
+          then adding other stakeholders who will be involved in the purchase
+          decision, then to the information and payment page that ended with a
+          confirmation page. We only included the four pages we deemed necessary
+          so we don't confuse the customer or lose them before they make it to
+          the purchase page. While we felt like we were missing certain
+          elements, such as a page dedicated to the breakdown of each project,
+          we decided to keep it simple and allow Vitor to guide us with his
+          feedback for the next iteration. On design, we didn’t want to
+          implement our style guide in our early iterations because we were
+          still grasping customer needs and the scope of our work and didn’t
+          want to misrepresent the brand.
+        </p>
+      </section>
+
+      <!-- studio critique and mid-project startup check in -->
+      <section class="split-section colored-background-white">
+        <div class="sidebar">
+          <h1 class="header">Critique and Mid-project Check In</h1>
+        </div>
+        <div class="content">
+          <p class="body-text">
+            We then got feedback from our peers and CUR8 on our low fidelity
+            wireframe.
+          </p>
+          <p class="body-text">
+            Here's the
+            <a
+              href="https://www.loom.com/share/e6d9c6ceee854084be0d5f43a17dbdd7"
+              target="_blank"
+              >Loom</a
+            >
+            we presented to them.
+          </p>
+          <p class="body-text">
+            <b>Feedback from Vitor: </b>
+            <br />
+            Vitor recommended adding a step between their portfolio simulator
+            and our Step 5 (the first page of our wireframe) to give users more
+            details and characteristics of specific projects that are included
+            in their portfolio. He liked the step with adding stakeholders but
+            encouraged us to be more creative with how we can allow stakeholders
+            to leave feedback or comments. Likewise, he wanted us to send these
+            stakeholders a more complete proposal of the portfolio, including a
+            cost breakdown and projects included. Finally, he informed us that,
+            realistically, users will not be able to purchase portfolios
+            immediately but will instead have to send a purchase request to be
+            approved by CUR8.
+          </p>
+
+          <p class="body-text">
+            <b>Feedback from Talie: </b>
+            <br />
+            Talie advised us to revisit the Step 7 - Review Portfolio page and
+            execute our vision of making it look like a receipt. Making the page
+            look like a receipt was our original intention; however, hearing
+            Talie’s feedback helped us realize that our vision was not coming
+            across. We agreed on the left side of the screen being a portfolio
+            summary and the right side containing a breakdown of each project.
+          </p>
+
+          <p class="body-text">
+            <b>Feedback from peers: </b>
+            <br />
+            One of our peers said that “there are no back buttons on the pages.
+            I think adding back buttons would add a lot of usability so that
+            purchasers can go back and fix a small mistake without having to
+            start the whole process over again.” This was something we missed
+            and went back to implement. Another one of our peers said that her
+            “one piece of feedback would be to make the "headers" of your lo-fi
+            designs shorter.” For example, turn "send the details of your
+            portfolio to stakeholders for sign off" into a shortened version
+            like "email stakeholders. We implemented this by making the names of
+            our pages and descriptions shorter, such as “Step 7 - Review
+            Portfolio.”
+          </p>
+        </div>
+      </section>
+
+      <!-- updating wireframe -->
+      <section class="full-section">
+        <h1 class="header">Updated Wireframe</h1>
+
+        <p class="body-text">
+          After our studio critique and mid-project check-in with CUR8, we
+          modified the wireframe to reflect the feedback we received. CUR8 liked
+          our initial project breakdown but asked us to include more specifics
+          on the project with characteristics on the speed of drawdown, tech or
+          nature-based, durability, location, and the supplier company. Step 5
+          below reflects those changes. Additionally, we added filters to allow
+          the customer to filter projects in their portfolio by solution type so
+          that they can more easily find the project they are looking for. CUR8
+          also included feedback about allowing the stakeholders invited to the
+          portfolio to leave feedback. Steps 7 and 8 on “flow 2” reflect the
+          invite the invited stakeholders from step 6 would see. Upon clicking
+          the “Go To Portfolio'' button in Step 7, the invited stakeholder will
+          see a detailed portfolio breakdown and will also have the opportunity
+          to leave comments, feedback, and questions about the portfolio in a
+          chat section on the left. Stakeholders will be able to see feedback
+          other members of their team have left and CUR8 can view this
+          communication/feedback to understand how their clients are thinking
+          about the portfolio. Continuing with Flow 1, we reflected CUR8’s
+          feedback about updating the purchasing step to be a purchase request
+          because realistically clients won’t be able to purchase the portfolio
+          without CUR8’s approval. This request page includes important
+          information CUR8 needs to approve the purchase request such as the
+          client’s name, email, address, and the reason for the portfolio.
+          Lastly, we added the request confirmation and a button that leads
+          clients back to step 5 so they can see their portfolio again.
+        </p>
+
+        <p class="body-text"><b>User Flow: </b></p>
+        <div class="images">
+          <img
+            class="image"
+            alt="first page of revised low fidelity wireframe"
+            src="assets/midfi1.png"
+          />
+          <img
+            class="image"
+            alt="second page of revised low fidelity wireframe"
+            src="assets/midfi2.png"
+          />
+          <img
+            class="image"
+            alt="thid page of revised low fidelity wireframe"
+            src="assets/midfi3.png"
+          />
+          <img
+            class="image"
+            alt="fourth page of revised low fidelity wireframe"
+            src="assets/midfi4.png"
+          />
+          <img
+            class="image"
+            alt="fifth page of revised low fidelity wireframe"
+            src="assets/midfi5.png"
+          />
+        </div>
+        <br />
+        <p class="body-text"><b>Invited Stakeholder Flow: </b></p>
+        <div class="images">
+          <img
+            class="image"
+            alt="stakeholder page of revised low fidelity wireframe"
+            src="assets/midfi6.png"
+          />
+          <img
+            class="image"
+            alt="stakeholder page of revised low fidelity wireframe"
+            src="assets/midfi7.png"
+          />
+        </div>
+      </section>
+
+      <!-- high fidelity prototype -->
+      <section class="full-section">
+        <h1 class="header">High Fidelity Prototype</h1>
+
+        <p class="body-text"><b>Style Guide: </b></p>
+        <div class="images">
+          <img
+            class="image"
+            alt="CUR8 style guide"
+            src="assets/styleguide1.png"
+          />
+          <img
+            class="image"
+            alt="CUR8 style guide"
+            src="assets/styleguide2.png"
+          />
+        </div>
+        <br />
+        <p class="body-text">
+          CUR8 provided us with a style guide that was in line with their Brand
+          identity. We followed that style guide to ensure that the flow we
+          designed fit in well with their current website and branding. We
+          believe the startup chose the neutral and earth tones and images they
+          have to reflect their climate-oriented business. Their background
+          color, a very pale cream, contrasts well with the forest greens that
+          highlight buttons, and appear in many images and color pages across
+          their site. Additionally, we followed their design for cards which we
+          used to display project information in the portfolio and textboxes
+          which we use for sending invites to collaborators, getting feedback
+          from clients, and filling out text fields for purchase requests.
+        </p>
+        <p class="body-text">
+          We also chose to stick with their style guide because the brand kit
+          CUR8 sent us was very consistent and reflected a strong brand
+          identity. We don’t have suggestions for improving the style guide,
+          because we felt it was already really well thought out and executed.
+        </p>
+        <br />
+        <p class="body-text">
+          <b>Interactive High Fidelity Prototype:</b>
+        </p>
+        <p class="body-text">
+          Check out our high fidelity Figma
+          <a
+            href="https://www.figma.com/file/ZEXqtJVYLHc5bSplkBXSxL/Cur8-High-Fid?type=design&node-id=11-704&mode=design&t=sKNgiVGQ5HHi4jUJ-0"
+            targe="_blank"
+            >here</a
+          >!
+        </p>
+        <p class="body-text">
+          For our high fidelity prototype, We chose colors that aligned with
+          CUR8’s brand identity and had good contrast for accessibility,
+          primarily cream, white, and green, and some deep purple, brown, and
+          pinks. We also used images from the brand kit that had evoked CUR8’s
+          climate-focused mission
+        </p>
+        <p class="body-text">
+          Step 5 is the first page of our design and picks up from CUR8’s
+          current flow which provides a summary of the user’s portfolio and
+          total costs based on their inputs. This page provides a breakdown of
+          projects within the portfolio. The portfolio overview including total
+          is at the top and users can filter by project type. The page is
+          scrollable so users can scroll down and see other projects. There is a
+          previous button that navigates back to CUR8’s overview floor and a
+          next button that takes you to the next page. The bar at the top shows
+          the users their progress throughout the process.
+        </p>
+        <img
+          class="image"
+          alt="high fidelity prototype step 5"
+          src="assets/hifi1.png"
+        />
+        <p class="body-text">
+          Step 6: Upon clicking the next button on Step 5, a pop-up encouraging
+          users to invite collaborators to view their portfolios and give
+          feedback comes up. The background becomes green to contrast the white
+          pop-up. Once users invite stakeholders they can see whether the
+          stakeholder has viewed the portfolio and can also click a button that
+          takes them directly to the stakeholder’s comments. We gave users the
+          choice to skip this step in case they are the only CFO at the company
+          or does not need other internal approval. The pop nature of this step
+          reflects its optionality. Additionally, the pop-up appearing over the
+          portfolio breakdown indiciates to users that the portfolio from Step 5
+          which is the background of the pop-up is what users are inviting
+          stakeholders to view.
+        </p>
+        <img
+          class="image"
+          alt="high fidelity prototype step 6"
+          src="assets/hifi2.png"
+        />
+        <img
+          class="image"
+          alt="high fidelity prototype step 6"
+          src="assets/hifi3.png"
+        />
+        <p class="body-text">
+          Step 7: After users either choose to add stakeholders or skip that
+          step, they will be led to step 7, a review page. The idea of this page
+          was to mimic a receipt that provided an itemized list and breakdown of
+          the projects in the portfolio, highlighting the total cost, and
+          important project characteristics such as the supplier company,
+          project type, carbon tonnes removed, drawdown speed, and durability.
+          On the right-hand side, the page includes a summary of the total
+          portfolio showing the breakdown of project type included in the
+          itemized portfolio. The listed design mimics a receipt which is
+          intentional and meant to evoke the feeling of reviewing items in your
+          shopping cart before purchasing.
+        </p>
+        <img
+          class="image"
+          alt="high fidelity prototype step 7"
+          src="assets/hifi4.png"
+        />
+        <p class="body-text">
+          Step 8 and 9: Once users review their portfolio, they are led to the
+          purchase request page. If the user did not invite stakeholders in
+          previous steps banner alert appears and the “open collaborators”
+          button takes them back to Step 6 to invite stakeholders from their
+          company to review the portfolio before the user submits a purchase
+          request. If the user still wishes to not invite stakeholders, they can
+          dismiss the notification. The second image shows the page users will
+          see if 1) they already invite stakeholders in Step 6 and 2) if they
+          click the “close notification” button. The top of this page includes
+          important metrics such as the subtotal of the project and the carbon
+          tonnes removed so users are reminded of their total and goal as they
+          submit their purchase request. Users then fill out their information
+          and submit the request. Upon submitting the request, users receive a
+          confirmation message and can choose to return to their portfolio which
+          will lead them back to Step 5 or exit the page.
+        </p>
+        <img
+          class="image"
+          alt="high fidelity prototype step 8"
+          src="assets/hifi5.png"
+        />
+        <img
+          class="image"
+          alt="high fidelity prototype step 8"
+          src="assets/hifi6.png"
+        />
+        <img
+          class="image"
+          alt="high fidelity prototype step 9"
+          src="assets/hifi7.png"
+        />
+
+        <p class="body-text">
+          Importantly, we made a second flow which shows that invited
+          stakeholders in step 6 will see.
+        </p>
+        <p class="body-text">
+          Once the user invites a stakeholder, the invited stakeholder will
+          receive an email alert informing them that they have been invited to
+          view their CUR8 portfolio solution where they can leave feedback and
+          ask questions. The “Go To Portfolio” button leads users to the second
+          page.
+        </p>
+        <img
+          class="image"
+          alt="stakeholder flow of high fidelity prototype"
+          src="assets/hifi8.png"
+        />
+        <p class="body-text">
+          Below is the page invited stakeholders are directed to when they click
+          the “Go to portfolio” button. This page includes a summary breakdown
+          of the portfolio solutions on the left. This summary includes project
+          type, speed of removal, durability, and geographic representation of
+          the project. The middle of the page includes the projects in the
+          portfolio and their characteristics. The right side of the page
+          includes a comment/chat feature where invited stakeholders can leave
+          questions and feedback for the portfolio. The chat design encourages
+          clients to communicate with their team and allows them to see the
+          feedback and questions their team members have. This will be helpful
+          for CUR8 because they can see how clients understand the project and
+          the different questions and feedback they have on the portfolio.
+        </p>
+        <img
+          class="image"
+          alt="stakeholder flow of high fidelity prototype"
+          src="assets/hifi9.png"
+        />
+        <p class="body-text">
+          Additionally, in the main user flow in step 6, once the user has
+          invited stakeholders, they can click the “see comments” button next to
+          the invited stakeholder’s name once the stakeholder leaves a comment.
+          This button leads them to the above page where stakeholders see the
+          portfolio breakdown and leave comments and feedback.
+        </p>
+        <img
+          class="image"
+          alt="stakeholder flow of high fidelity prototype"
+          src="assets/hifi10.png"
+        />
+      </section>
+
+      <!-- final founder feedback -->
+      <section class="split-section colored-background-white">
+        <div class="sidebar">
+          <h1 class="header">Final Founder Feedback</h1>
+        </div>
+        <div class="content">
+          <p class="body-text">
+            We sent another
+            <a
+              href="https://www.loom.com/share/cb1e051f58b9460e94c141ca374bf9fb?sid=ffb581d4-0852-40f6-82f1-708a8937fe8f"
+              target="_blank"
+              >Loom</a
+            >
+            to CUR8 to get feedback on our high fidelity wireframe this time.
+          </p>
+
+          <p class="body-text">
+            The feedback from CUR8 is included in our high fidelity mockup on
+            Figma. You can reference our
+            <a
+              href="https://www.figma.com/file/p1Udmg2kCnHFqdq8gd3kK6/CUR8?type=design&node-id=0%3A1&mode=design&t=aP2dpECOhFH5DFvu-1"
+              target="_blank"
+              >Figma</a
+            >
+            (page:"high fid") for context on the filters, colors, tooltips, etc.
+            suggested.
+          </p>
+          <p class="body-text">
+            Here's a general overview of the notes we got:
+          </p>
+          <p class="body-text">
+            <b>On Step 5 - Project Characteristics page</b>
+          </p>
+          <ul class="body-text">
+            <li>
+              remove filters by type because there's only about 7-8 projects
+              total, could filter by tech, nature, hybrid instead
+            </li>
+            <li>add tooltips to explain what each project type means</li>
+          </ul>
+
+          <p class="body-text"><b>On Step 7 - Review Portfolio</b></p>
+          <ul class="body-text">
+            <li>add tooltips to explain what each project type means</li>
+            <li>
+              add colors to project descriptions on the right to match to the
+              project type colors on the left - for example, if the water
+              project category is blue, add blue coloring to each individual
+              water project
+            </li>
+            <li>add percentage in the list of project category breakdown</li>
+            <li>every project is different, very diversified</li>
+          </ul>
+
+          <p class="body-text"><b>On Collaborator Chat feature</b></p>
+          <ul class="body-text">
+            <li>add a button for approval</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- takeaways -->
+      <section class="split-section colored-background-green">
+        <div class="sidebar">
+          <h1 class="header">Takeaways</h1>
+        </div>
+        <div class="content">
+          <p class="body-text">
+            We really enjoyed this project and got a greater understanding of
+            the iterative design process. It was helpful to get feedback from
+            classmates, professors, and the CUR8 team since they each brought
+            new insights. A purchasing flow is something we're all familiar with
+            and seems rather straightforward, but we learned that there are
+            actually very important considerations to make. We got to learn more
+            about carbon removal portfolios and how you might structure a
+            purchasing flow involving multiple stakeholders and users who might
+            be new to the process as well. Since carbon removal portfolios are a
+            complex product, they must be thoughtfully considered before buying,
+            and we had to design a flow with enough friction and information so
+            that users are satisfied with what they are purchasing.
+          </p>
+          <p class="body-text">
+            We learned a lot from this process and are super grateful to Vitor
+            and the CUR8 team for giving us this opportunity!
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
